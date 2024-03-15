@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: AmazonApp-deployment
+  name: amazonapp-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: AmazonApp
+      app: amazonapp
   template:
     metadata:
       labels:
-        app: AmazonApp
+        app: amazonapp
     spec:
       containers:
         - name: AmazonApp
