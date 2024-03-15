@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reddit-clone-deployment
+  name: AmazonApp-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reddit-clone-app
+      app: AmazonApp
   template:
     metadata:
       labels:
-        app: reddit-clone-app
+        app: AmazonApp
     spec:
       containers:
-        - name: reddit-clone-app
-          image: abdelrhmanh21/reddit-clone-pipeline:1.0.0-10
+        - name: AmazonApp
+          image: abdelrhmanh21/amazon-devsecops:1.0.0-2
           resources:
             limits:
               cpu: "1"

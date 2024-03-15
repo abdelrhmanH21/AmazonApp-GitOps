@@ -32,7 +32,7 @@ pipeline {
                     git commit -m "Updated Deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'GitHub', gitToolName: 'Default')]) {
-                    sh "git push https://github.com/abdelrhmanH21/Reddit-Clone-GitOps.git main"
+                    sh "git push https://github.com/abdelrhmanH21/AmazonApp-GitOps.git main"
                 }
             }
          }
