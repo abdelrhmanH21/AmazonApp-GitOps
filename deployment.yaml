@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: AmazonApp
-          image: abdelrhmanh21/amazon-devsecops:1.0.0-2
+          image: abdelrhmanh21/amazon-devsecops:1.0.0-5
           resources:
             limits:
               cpu: "1"
